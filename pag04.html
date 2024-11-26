@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <title>SuperDev - Cadastro de Pet Shop</title>
+    
+</head>
+<body>
+    <h1>Bem Vindo Pet Shop</h1>
+    <form action="http://petshop.php" method="post">
+        <div>
+            
+            <div>
+                <label for="nome">Nome do Pet</label>
+                <input type="text" name="nome" id="nome"  minlength="3" maxlength="20" required>
+            </div>
+
+            <div>
+                <label for="raca">Qual a Raça</label>
+                <select name="raca" id="raca">
+                    <option value="dis" placeholder="qual a Raça" disabled>Selecione a Raça</option>
+                    <option value="yorkshire">Yorkshire</option>
+                    <option value="viralata">Vira Lata</option>
+                    <option value="Akita">Akita</option>
+                    <option value="Beagle">Beagle</option>
+                    <option value="Bichon frisé">Bichon frisé</option>
+                    <option value="Boiadeiro australiano">Boiadeiro australiano</option>
+                    <option value="Border collie">Border collie</option>
+                    <option value="Boxer">Boxer</option>
+                    <option value="Buldogue francês">Buldogue francês</option>
+                    <option value="Buldogue inglês">Buldogue inglês</option>
+                    <option value="Bull terrier">Bull terrier</option>
+                </select>
+            </div>
+
+            <div>
+                
+                <label for="castrado">Castrado</label>
+                <input type="radio" name="sim" id="sim">
+                <label for="sim">Sim</label>
+                <input type="radio" name="sim" id="nao">                
+                <label for="nao">Não</label>
+            </div>
+
+            <div>
+                <label for="date">Data Nascimento</label>
+                <input type="date" name="date" id="date" min="2007-11-22" max="2025-11-22">
+            </div>
+
+            <div><button type="submit">Salvar</button></div>
+     </div>
+    </form>
+    
+    <div id="voltar"><a href="index.html"><img src="butoes/desfazer.png" width="30px" alt="votar"></a></div>
+</body>
+</html>

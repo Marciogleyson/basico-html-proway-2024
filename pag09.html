@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <title>SuperDev - Cadastro de Estudande</title>
+</head>
+<body>
+    <h1>Cadastro de Estudante</h1>
+    <form action="https://localhost:5000/pasta/cadastro" method="post">
+        <div>
+            <label for="nome">Nome do Estudante</label>
+            <input type="text" name="nome" id="nome" minlength="5" maxlength="50" required placeholder="digite seu nome">
+        </div>
+        <div>
+            <label for="idade">Idade</label>
+            <input type="number" name="idade" id="idade" min="5" max="100" required placeholder="digite sua idade">
+        </div>
+
+        <div>
+            <label for="lista">Curso</label>
+            <input list="lista" name="blista" id="clista" required placeholder="escolha o curso">
+            <datalist id="lista">
+                <option value="Engenharia"></option>
+                <option value="Medicina"></option>
+                <option value="Direito"></option>
+                <option value="Adminitração"></option>
+                <option value="Ciência da Computação"></option>
+            </datalist>
+        </div>
+
+        <div>
+            <label for="matricula">Matricula</label>
+            <input type="text" name="matricula" id="mtricula" minlength="10" maxlength="20" placeholder="digite sua matricula">
+        </div>
+
+        <div>
+            <label for="nascimento">Data Nascimento</label>
+            <input type="date" name="nascimento" id="nascimento" min="2006-11-11" max="2024-11-24">
+        </div>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+
+
+
+    <div id="voltar"><a href="index.html"><img src="butoes/desfazer.png" width="30px" alt="votar"></a></div>
+
+</body>
+</html>

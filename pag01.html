@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <title>SuperDev - Cadastro de Jogo</title>
+    
+</head>
+<body>
+
+        <h1>Tipos de jogos</h1>
+        <form action="http://localhost:4000/jogo/registrar" method="post">
+            <div>
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required>
+                <label for="idade">Idade miníma</label>
+                <input type="number" name="idade" id="idade" required>
+            </div>
+        
+            <div>
+                <label for="preco">Preço</label>
+                <input type="number" name="preco" id="preco">
+                <input type="file" name="mortal" id="mortal-combate">
+            </div>
+            <div>
+                <button type="submit">Cadastra</button>
+            </div>
+        
+            <div id="voltar"><a href="index.html"><img src="butoes/desfazer.png" width="30px" alt="votar"></a></div>
+        </form>
+    
+</body>
+</html>

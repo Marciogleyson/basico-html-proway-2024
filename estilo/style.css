@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+
+:root {
+    --cor01: #3A758C;
+    --cor02: #878C61;
+    --cor03: #D9D4C7;
+    --cor04: #BF5B45;
+    --cor05: #D95E52;
+
+    --font01: "Lacquer", system-ui;
+}
+
+body {
+    background-color: #3A758C;
+}
+
+
+main {
+    background-color: white;
+    width: 600px;
+    height: 800px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+main div {
+    text-indent: 10px;
+    padding: 10px;
+    
+    
+}
+
+main div:hover {
+    background-color: #BF5B45;
+    width: 250px;
+    border-radius: 9px;
+}
+
+main div a:hover {
+    color: white;
+    text-shadow: 4px 3px 2px black;
+    text-decoration: none;
+}
+
+section div {
+    background-color: white;
+    width: 600px;
+    margin: 20px;
+    text-indent: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+h1 {
+    background-image: linear-gradient(to bottom, #bf5b45, #2c0906);
+    color: #3A758C;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+   
+    
+}
+
+p {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    
+}
+
+
+#central {
+    position: absolute; 
+    bottom: 13.7%; 
+    left: 47%;
+   
+}
+
+#voltar {
+    margin: auto; /* margem vertical definida como 0 e horizontal automática */
+    width:100px;
+}
+
+.tabela td, th {
+    text-align: center;
+    width: 80px;
+    border: 1px solid black;
+    
+
+}
+
+#campo {
+    margin: auto; /* margem vertical definida como 0 e horizontal automática */
+    width:400px;
+}
+
+#tamanho {
+    width: 400px;
+}
+
+
+
+footer {
+    background-image: linear-gradient(to top, #2c0906, #bf5b45);
+    color: #3A758C;
+    border-radius: 10px;
+    padding: 2px;
+    margin: 0px;
+    text-align: center;
+    font-size: large;
+}
+
+.rodape {
+    text-align: center;
+}

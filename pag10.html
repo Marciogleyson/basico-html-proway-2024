@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <title>SuperDev - Cadastro de Veículo</title>
+</head>
+<body>
+    <h1>Cadastro de Veículos</h1>
+    <form action="https://localhost:7000/sites/cadastro" method="post">
+
+        <div>
+            <label for="marca">Marca do Carro</label>
+            <input type="text" name="marca" id="marca" minlength="3" maxlength="50" required>
+        </div>
+
+        <div>
+            <label for="modelo">Modelo do Carro</label>
+            <input type="text" name="modelo" id="modelo" required>
+        </div>
+
+        <div>
+            <label for="ano">Ano de Fabricação</label>
+            <input type="text" name="ano" id="ano" min="1950-12-12" max="2024-12-30" required>
+        </div>
+
+        <div>
+            <label for="cor">Escolha a Cor do Carro</label>
+            <input type="color" name="cor" id="cor" min="3" max="20" required>
+        </div>
+
+        <div>
+            <label for="placa">Qual a Placa do Carro</label>
+            <input type="text" name="placa" id="placa" maxlength="7" pattern="[A-Z]{2,3}[0-9]{4}|[A-Z]{3,4}[0-9]{3}|[A-Z0-9]{7}" required>
+        </div>
+
+        <button type="submit">Cadastrar</button>
+
+    </form>
+
+    <div id="voltar"><a href="index.html"><img src="butoes/desfazer.png" width="30px" alt="votar"></a></div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <title>SuperDev - Cadastro de Colaborador</title>
+    
+</head>
+<body>
+    <h1>Cadastro de Colaborador</h1>
+    <form action="index.php" method="post">
+        <div>
+            <label for="nome">Nome do Colaborador</label>
+            <input type="text" name="nome" id="nome"  minlength="5" maxlength="30" required>
+        </div>
+        <div>
+            <label for="nome">Sobre Nome do Colaborador</label>
+            <input type="text" name="nome" id="nome"  minlength="5" maxlength="30" required>
+        </div>
+
+        <div>
+            <label for="cpf">CPF:</label>
+            <input type="text" name="cpf" id="cpf" placeholder="666.666.666-00" minlength="14" maxlength="14" required>
+        </div>
+
+        <div>
+            <label for="cnpj">CNPJ</label>
+            <input type="text" name="cnpj" id="cnpj" minlength="18" maxlength="18" placeholder="digite o cnpj" required>
+        </div>
+
+        <div>
+
+            <select name="colaborador" id="colaborador">
+                <option disabled>Tipo de Colaborador</option>
+                <option value="cpf">C.P.F</option>
+                <option value="pj">Pj</option>
+
+            </select>
+        </div>
+
+        <div>
+            <label for="horas">Horas</label>
+            <input type="time" name="campo-time" id="time" min="40" max="300">
+        </div>
+
+        <div>
+            <label for="valor-hora">Valor da Hora</label>
+            <input type="number" name="campo-valor" id="valor" min="15" max="45" required>
+        </div>
+
+        <div>
+            <label for="data-entrada">Data de Entrada</label>
+            <input type="date" name="data-entrada" id="data-entrada" max="2024-11-23" >
+        </div>
+
+        <div>
+            <label for="tipo-colaborador">Tipo do Colaborador</label>
+            <select name="tipo-colaborador" id="tipo-colaborador">
+                <option value="disabled">Escolha o tipo</option>
+                <option value="pj">Pj</option>
+                <option value="cpf">CPF</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="tipo-colaborador">Tipo do colaborador</label>
+            <input list="lista" id="campo-lista" name="lista">
+            <datalist id="lista">
+                <option value="Pj"></option>
+                <option value="CPF"></option>
+            </datalist>
+        </div>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+    
+    <div id="voltar"><a href="index.html"><img src="butoes/desfazer.png" width="30px" alt="votar"></a></div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <title>SuperDev - Cadastro de Evento</title>
+</head>
+<body>
+    <h1>Cadastro de Evento</h1>
+    <form action="http://localhost:5000/cadstrar" method="post">
+        <div>
+            <label for="nome">Nome do Evento</label>
+            <input type="text" name="nome" id="nome" minlength="5" maxlength="50">
+        </div>
+
+        <div>
+            <label for="data">Data do Evento</label>
+            <input type="date" name="data" id="data" min="2024-11-23">
+        </div>
+
+        <div>
+            <label for="local">Local do Evento</label>
+            <input type="text" name="local" id="local" minlength="3" maxlength="100">
+        </div>
+
+        <div>
+            <label for="paticipantes">Número de Participante</label>
+            <input type="number" name="participante" id="participante" min="10" max="1000">
+        </div>
+
+        <div>
+            <label for="evento">Tipo de Evento</label>
+            <input list="rlista" name="lista" id="c-lista">
+            <datalist id="rlista">                
+                <option value="OnLine"></option>
+                <option value="Presencial"></option>
+                <option value="Híbrido"></option>
+            </datalist>
+        </div>
+        <button type="submit">Cadastrar</button>
+    </form>
+
+
+    <div id="voltar"><a href="index.html"><img src="butoes/desfazer.png" width="30px" alt="votar"></a></div>
+</body>
+</html>

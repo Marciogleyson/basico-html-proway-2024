@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <title>SuperDev - Cadastro de produto</title>
+</head>
+<body>
+    <h1>Cadastro de Produto</h1>
+    <form action="https://localhost:5000/cadstro" method="post">
+        <label for="nome">Nome do Produto</label>
+        <input list="nome" name="nome" id="campo-nome" minlength="
+        3" maxlength="50" required>
+        <datalist id="nome" >
+            <option value="Alimento"></option>
+            <option value="Brinquedo"></option>
+            <option value="Cosmético"></option>
+            <option value="Roupa"></option>
+            
+        </datalist>
+        <div>
+            <label for="preco">Preço</label>
+            <input type="number" name="preco" id="preco" min="5" max="5000" required>
+        </div>
+
+        <div>
+            <label for="quantidade">Quantidade em Estoque</label>
+            <input type="number" name="estoque" id="estoque" min="1" max="1000">
+        </div>
+
+        <div>
+            <label for="data">Data de Validade</label>
+            <input type="date" name="date-time" id="date-time" min="2024-11-22">
+        </div>
+        <button type="submit">Cadastrar</button>
+    </form>
+    
+    <div id="voltar"><a href="index.html"><img src="butoes/desfazer.png" width="30px" alt="votar"></a></div>
+    
+</body>
+</html>

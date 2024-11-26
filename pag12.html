@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo/style.css">
+    <title>Lista de Carro</title>
+</head>
+
+<body>
+    <h1>Lista de Carros</h1>
+    <div style="float: left; width: 50%; background-color: aqua;">
+        <form action="http://localhost:3000/carros/cadastrar">
+            <div>
+                <label for="modelo">Modelo</label>
+                <input type="text" id="modelo" required name="modelo">
+            </div>
+            <div>
+                <label for="ano">Ano</label>
+                <input type="number" id="ano" min="1950" max="2025" required name="ano">
+            </div>
+            <div>
+                <label for="motor">Motor</label>
+                <select name="motor" id="motor" required>
+                    <option value="1.0">1.0</option>
+                    <option value="1.0 Turbo">1.0 Turbo</option>
+                    <option value="1.4">1.4</option>
+                    <option value="2.0">2.0</option>
+                </select>
+            </div>
+            <div>
+                <label for="foto">Foto</label>
+                <input type="file" id="foto" required name="foto">
+            </div>
+
+            <div>
+                <label for="cor">Cor</label>
+                <input type="color" id="cor" required name="color">
+            </div>
+            <div>
+                <label for="preco">Preço</label>
+                <input type="number" id="preco" min="1000.00" max="100000.00" step="0.01" 
+                    required name="preco">
+            </div>
+            <button type="submit">Cadastrar</button>
+
+        </form>
+    </div>
+    <div style="float: right; width: 50%">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Modelo</th>
+                    <th>Motor</th>
+                    <th>Preço</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="https://www2.mercedes-benz.com.br/content/brazil/pt_BR/passengercars/models/hatchback/_jcr_content/root/responsivegrid/simple_stage.component.damq3.3433798505104.jpg/mercedes-benz-compact-cars-stage-3840x3840-07-2023.jpg" 
+                            width="100px">
+                    </td>
+                    <td>MERCEDES BENZ A 200</td>
+                    <td>4.0 Turbo</td>
+                    <td>R$ 876.000,00</td>
+                    <td>
+                        <button>Editar</button>
+                        <button>Apagar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://www.bmw.com.br/content/dam/bmw/common/all-models/x-series/x6/2023/navigation/bmw-x-series-x6-m60i-modelfinder.png/jcr:content/renditions/cq5dam.resized.img.890.medium.time1675183272938.png" 
+                            width="100px">
+                    </td>
+                    <td>BMW X6</td>
+                    <td>3.0 Turbo</td>
+                    <td>R$ 920.850,00</td>
+                    <td>
+                        <div>
+                            <button>Editar</button>
+                        </div>
+                        <button>Apagar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+<div id="voltar"><a href="index.html"><img src="butoes/desfazer.png" width="30px" alt="votar"></a></div>
+</html>
+<!--
+    Criar uma página que contém 3 links: (principal.html)
+        - História do HTML (historia-html.html)
+        - Cadastro de PET (pet-cadastro.html)
+        - Lista de PETs (pet-listagem.html)
+    Página de história (historia-html.html)
+        - deve conter 1 parágrafo, 1 imagem, uma lista ordenada(listando algumas tags)
+    Pagina de  Cadastro de PET
+        - Deve conter form, três campos
+        - Deve conter uma lista não ordenada
+    Página de lista de PETs
+        - Deve conter uma tabela com os pets (deve conter uma imagem)
+-->

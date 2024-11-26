@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <title>SuperDev - Cadastro de Livro</title>
+</head>
+<body>
+    <h1>Cadastro de Livro</h1>
+    <form action="https://localhost:5000/cadastro" method="post">
+        <div>
+            <label for="nome">Título do Livro</label>
+            <input type="text" name="nome-livro" id="nome-livro" minlength="3" maxlength="50" required>
+        </div>
+
+        <div>
+            <label for="autor">Autor</label>
+            <input type="text" name="autor" id="autor" minlength="3" maxlength="100" required placeholder="digite o autor" >
+        </div>
+
+        <div>
+            <label for="ano">Ano de Publicação</label>
+            <input type="date" name="date" id="date" min="1900-12-12" max="2024-12-12" required placeholder="ano de publicação">
+        </div>
+
+        <div>
+            <label for="categoria">Gêneros Literário</label>
+            <input list="lista" name="lista" id="campo-lista" required>
+            
+            <datalist id="lista">
+                <option value="Romance"></option>
+                <option value="Ficção Cientifica"></option>
+                <option value="Fantasia"></option>
+                <option value="História"></option>
+                <option value="Biografia"></option>
+                
+            </datalist>
+            <div>
+                <label for="paginas">Número de Páginas</label>
+                <input type="number" name="numero" id="numero" required minlength="50" maxlength="2000">
+            </div>
+        </div>
+        <button type="submit">Cadastrar</button>
+    </form>
+    
+    <div id="voltar"><a href="index.html"><img src="butoes/desfazer.png" width="30px" alt="votar"></a></div>
+</body>
+</html>
